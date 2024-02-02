@@ -19,6 +19,13 @@ Cloner le repot et effectuer un terraform init/plan/apply afin de voir un exempl
 | [azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) | >= 3.11, < 4.0 |
 
 
+## Modules
+
+| Name |
+|------|
+| [az_network-interface](https://github.com/SebastienArthaud/az_network-interface.git) |
+
+
 ## Resources provisionés
 
 | Name | Type |
