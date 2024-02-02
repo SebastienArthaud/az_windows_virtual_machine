@@ -12,7 +12,7 @@ resource "random_password" "virtual_machine_password" {
 }
 
 module "vm_network_interface" {
-  source                      = "git::https://gitlab.devolab.cloud/m_cloud_lyon/az-module-tf/az_network-interface.git"
+  source                      = "github.com/SebastienArthaud/az_network-interface.git"
   resourcegroup_name          = var.resourcegroup_name
   location                    = var.location
   ip_name                     = local.ip_name
