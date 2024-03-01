@@ -76,3 +76,22 @@ variable "vm_image" {
     "version" : "latest"
   }
 }
+
+variable "custom_image_name" {
+  type        = string
+  description = "Nom de l'image customisée si besoin."
+  default     = ""
+}
+
+variable "custom_image_gallery_name" {
+  type        = string
+  description = "Nom de la galerie de l'image customisée si besoin."
+  default     = ""
+}
+
+
+variable "custom_image_name_resource_group" {
+  description = "resource group de l'image customisée si besoin."
+  type        = string
+  default     = ""
+}

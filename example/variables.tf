@@ -27,3 +27,15 @@ variable "location" {
   type        = string
   description = "Resource group name"
 }
+
+variable "custom_image_name" {
+  type        = string
+  description = "Nom de l'image customisée si besoin. (La variable vm_image devient alors nulle)"
+  default     = ""
+}
+
+variable "custom_image_gallery_name" {
+  type        = string
+  description = "Nom de la galerie de l'image customisée si besoin."
+  default     = ""
+}

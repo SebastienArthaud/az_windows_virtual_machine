@@ -19,13 +19,6 @@ Cloner le repot et effectuer un terraform init/plan/apply afin de voir un exempl
 | [azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs) | >= 3.11, < 4.0 |
 
 
-## Modules
-
-| Name |
-|------|
-| [az_network-interface](https://github.com/SebastienArthaud/az_network-interface.git) |
-
-
 ## Resources provisionés
 
 | Name | Type |
@@ -51,6 +44,9 @@ Cloner le repot et effectuer un terraform init/plan/apply afin de voir un exempl
 | os_disk_type | Type de disque OS | `string` | "Standard_LRS" | no |
 | identity_type | Identité de la machine | `string` | "SystemAssigned" | no |
 | [vm_image](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage) | Image OS de la machine créée | `map(any)` | <pre>{<br>  "publisher": "MicrosoftWindowsServer",<br>  "offer": "WindowsServer",<br>  "sku": "2019-Datacenter",<br>  "version": "latest"<br>}</pre> | no |
+| custom_image_name | Nom de l'image customisée si besoin. (La variable vm_image devient alors nulle) | `string` | "" | no |
+| custom_image_gallery_name | Nom de la galerie de l'image customisée si besoin. | `string` | "" | no |
+| custom_image_name_resource_group | resource group de l'image customisée si besoin. (La variable vm_image devient alors nulle) | `string` | "" | no |
 
 
 ## Outputs
